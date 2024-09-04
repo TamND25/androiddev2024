@@ -19,13 +19,6 @@ public class ForecastFragment extends Fragment {
         // Required empty public constructor
     }
 
-    public static ForecastFragment newInstance() {
-        ForecastFragment fragment = new ForecastFragment();
-        Bundle args = new Bundle();
-        fragment.setArguments(args);
-        return fragment;
-    }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,9 +27,9 @@ public class ForecastFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        FrameLayout view = (FrameLayout) inflater.inflate(R.layout.fragment_forecast, container, false);
-        view.setBackgroundColor(Color.parseColor("#2000FF00"));
-
+        View view = inflater.inflate(R.layout.fragment_forecast, container, false);
+        view.setBackgroundColor(Color.parseColor("#00000000"));
+    /*
         // Create LinearLayout
         LinearLayout linearLayout = new LinearLayout(getActivity());
         linearLayout.setOrientation(LinearLayout.VERTICAL);
@@ -58,7 +51,7 @@ public class ForecastFragment extends Fragment {
 
         // Add LinearLayout to FrameLayout
         view.addView(linearLayout);
-
+    */
         return view;
     }
 

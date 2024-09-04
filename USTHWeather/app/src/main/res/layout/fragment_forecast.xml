@@ -1,16 +1,258 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ForecastFragment">
+    android:orientation="vertical"
+    android:background="#ccccff"
+    tools:context=".ForecastFragment"
+    tools:ignore="UseCompoundDrawables">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        />
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Mon"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/weather_icon"
+            android:importantForAccessibility="no"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Raining_hard"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_weight="2"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Tue"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/weather_icon"
+            android:importantForAccessibility="no"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Raining_hard"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_weight="2"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Wed"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/weather_icon"
+            android:importantForAccessibility="no"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Raining_hard"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_weight="2"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Thu"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/weather_icon"
+            android:importantForAccessibility="no"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Raining_hard"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_weight="2"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Fri"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/weather_icon"
+            android:importantForAccessibility="no"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Raining_hard"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_weight="2"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Sat"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/weather_icon"
+            android:importantForAccessibility="no"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Raining_hard"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_weight="2"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Sun"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/weather_icon"
+            android:importantForAccessibility="no"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Raining_hard"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_weight="2"
+            />
+
+    </LinearLayout>
 
 
-</FrameLayout>
+</LinearLayout>
