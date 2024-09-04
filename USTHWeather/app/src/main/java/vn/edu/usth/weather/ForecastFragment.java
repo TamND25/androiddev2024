@@ -28,7 +28,6 @@ public class ForecastFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_forecast, container, false);
-        view.setBackgroundColor(Color.parseColor("#00000000"));
     /*
         // Create LinearLayout
         LinearLayout linearLayout = new LinearLayout(getActivity());
