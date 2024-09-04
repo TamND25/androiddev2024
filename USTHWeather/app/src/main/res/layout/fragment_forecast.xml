@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="80dp"
         android:orientation="horizontal"
         >
 
@@ -25,7 +25,7 @@
             />
 
         <ImageView
-            android:layout_width="40dp"
+            android:layout_width="80dp"
             android:layout_height="match_parent"
             android:background="@drawable/weather_icon"
             android:importantForAccessibility="no"
@@ -35,7 +35,7 @@
         <TextView
             android:layout_width="200dp"
             android:layout_height="match_parent"
-            android:text="Raining_hard"
+            android:text="Partly Rain\n 24C - 41C"
             android:textSize="25sp"
             android:gravity="center"
             android:textAlignment="center"
@@ -43,9 +43,10 @@
             />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="80dp"
         android:orientation="horizontal"
         >
 
@@ -60,7 +61,7 @@
             />
 
         <ImageView
-            android:layout_width="40dp"
+            android:layout_width="80dp"
             android:layout_height="match_parent"
             android:background="@drawable/weather_icon"
             android:importantForAccessibility="no"
@@ -70,7 +71,7 @@
         <TextView
             android:layout_width="200dp"
             android:layout_height="match_parent"
-            android:text="Raining_hard"
+            android:text="Partly Rain\n 24C - 41C"
             android:textSize="25sp"
             android:gravity="center"
             android:textAlignment="center"
@@ -78,9 +79,10 @@
             />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="80dp"
         android:orientation="horizontal"
         >
 
@@ -95,7 +97,7 @@
             />
 
         <ImageView
-            android:layout_width="40dp"
+            android:layout_width="80dp"
             android:layout_height="match_parent"
             android:background="@drawable/weather_icon"
             android:importantForAccessibility="no"
@@ -105,7 +107,7 @@
         <TextView
             android:layout_width="200dp"
             android:layout_height="match_parent"
-            android:text="Raining_hard"
+            android:text="Partly Rain\n 24C - 41C"
             android:textSize="25sp"
             android:gravity="center"
             android:textAlignment="center"
@@ -113,9 +115,10 @@
             />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="80dp"
         android:orientation="horizontal"
         >
 
@@ -130,7 +133,7 @@
             />
 
         <ImageView
-            android:layout_width="40dp"
+            android:layout_width="80dp"
             android:layout_height="match_parent"
             android:background="@drawable/weather_icon"
             android:importantForAccessibility="no"
@@ -140,7 +143,7 @@
         <TextView
             android:layout_width="200dp"
             android:layout_height="match_parent"
-            android:text="Raining_hard"
+            android:text="Partly Rain\n 24C - 41C"
             android:textSize="25sp"
             android:gravity="center"
             android:textAlignment="center"
@@ -148,9 +151,10 @@
             />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="80dp"
         android:orientation="horizontal"
         >
 
@@ -165,7 +169,7 @@
             />
 
         <ImageView
-            android:layout_width="40dp"
+            android:layout_width="80dp"
             android:layout_height="match_parent"
             android:background="@drawable/weather_icon"
             android:importantForAccessibility="no"
@@ -175,7 +179,7 @@
         <TextView
             android:layout_width="200dp"
             android:layout_height="match_parent"
-            android:text="Raining_hard"
+            android:text="Partly Rain\n 24C - 41C"
             android:textSize="25sp"
             android:gravity="center"
             android:textAlignment="center"
@@ -183,9 +187,10 @@
             />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="80dp"
         android:orientation="horizontal"
         >
 
@@ -200,7 +205,7 @@
             />
 
         <ImageView
-            android:layout_width="40dp"
+            android:layout_width="80dp"
             android:layout_height="match_parent"
             android:background="@drawable/weather_icon"
             android:importantForAccessibility="no"
@@ -210,7 +215,7 @@
         <TextView
             android:layout_width="200dp"
             android:layout_height="match_parent"
-            android:text="Raining_hard"
+            android:text="Partly Rain\n 24C - 41C"
             android:textSize="25sp"
             android:gravity="center"
             android:textAlignment="center"
@@ -218,9 +223,10 @@
             />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="80dp"
         android:orientation="horizontal"
         >
 
@@ -235,7 +241,7 @@
             />
 
         <ImageView
-            android:layout_width="40dp"
+            android:layout_width="80dp"
             android:layout_height="match_parent"
             android:background="@drawable/weather_icon"
             android:importantForAccessibility="no"
@@ -245,7 +251,7 @@
         <TextView
             android:layout_width="200dp"
             android:layout_height="match_parent"
-            android:text="Raining_hard"
+            android:text="Partly Rain\n 24C - 41C"
             android:textSize="25sp"
             android:gravity="center"
             android:textAlignment="center"
