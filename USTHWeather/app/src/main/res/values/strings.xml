@@ -5,4 +5,21 @@
     <string name="thursday">Thursday</string>
     <string name="monday">Monday</string>
     <string name="raining_hard">Raining hard</string>
+    <string name="mon">Mon</string>
+    <string name="partly_rain_n_24c_41c">Partly Rain\n 24C - 41C</string>
+    <string name="tue">Tue</string>
+    <string name="partly_rain_n_24c_411">Partly Rain\n 24C - 41C</string>
+    <string name="wed">Wed</string>
+    <string name="partly_rain_n_24c_412">Partly Rain\n 24C - 41C</string>
+    <string name="thu">Thu</string>
+    <string name="partly_rain_n_24c_413">Partly Rain\n 24C - 41C</string>
+    <string name="fri">Fri</string>
+    <string name="partly_rain_n_24c_41c1">Partly Rain\n 24C - 41C</string>
+    <string name="sat">Sat</string>
+    <string name="partly_rain_n_24c_41c2">Partly Rain\n 24C - 41C</string>
+    <string name="sun">Sun</string>
+    <string name="partly_rain_n_24c_41c4">Partly Rain\n 24C - 41C</string>
+    <string name="_12c">12C</string>
+    <string name="paris">Paris</string>
+    <string name="_12c_n_cloudy">12C \n Cloudy</string>
 </resources>
