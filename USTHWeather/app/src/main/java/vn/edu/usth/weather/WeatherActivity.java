@@ -10,6 +10,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.viewpager.widget.ViewPager;
 
+import com.google.android.material.tabs.TabLayout;
+
 public class WeatherActivity extends AppCompatActivity {
     public static final String TAG = "Weathering";
     @Override
@@ -27,6 +29,8 @@ public class WeatherActivity extends AppCompatActivity {
         ViewPager pager = findViewById(R.id.pager);
         HomeFragmentPagerAdapter adapter = new HomeFragmentPagerAdapter(getSupportFragmentManager());
         pager.setAdapter(adapter);
+        TabLayout tablayout = findViewById(R.id.tab_layout);
+        tablayout.setupWithViewPager(pager);
     }
 
     @Override
