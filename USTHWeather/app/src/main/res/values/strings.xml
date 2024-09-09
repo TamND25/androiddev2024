@@ -22,4 +22,8 @@
     <string name="_12c">12C</string>
     <string name="paris">Paris</string>
     <string name="_12c_n_cloudy">12C \n Cloudy</string>
+    <string name="hanoi">Hanoi</string>
+    <string name="_20c_n_cloudy">20C \n Cloudy</string>
+    <string name="tokyo">Tokyo</string>
+    <string name="_18c_n_cloudy">18C \n Cloudy</string>
 </resources>
