@@ -17,4 +17,7 @@
     <string name="paris">Paris</string>
     <string name="hanoi">Hà Nội</string>
     <string name="tokyo">Tokyo</string>
+    <string name="Weather_Hanoi">20C \nCloudy</string>
+    <string name="Weather_Paris">12C \nCloudy</string>
+    <string name="Weather_Tokyo">18C \nCloudy</string>
 </resources>
