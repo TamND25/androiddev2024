@@ -1,5 +1,6 @@
 package vn.edu.usth.weather;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -14,6 +15,7 @@ import com.google.android.material.tabs.TabLayout;
 
 public class WeatherActivity extends AppCompatActivity {
     public static final String TAG = "Weathering";
+    MediaPlayer mp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +33,10 @@ public class WeatherActivity extends AppCompatActivity {
         pager.setAdapter(adapter);
         TabLayout tablayout = findViewById(R.id.tab_layout);
         tablayout.setupWithViewPager(pager);
+
+        mp = MediaPlayer.create(this, R.raw.bury_the_light);
+        mp.setLooping(true);
+        mp.start();
     }
 
     @Override
