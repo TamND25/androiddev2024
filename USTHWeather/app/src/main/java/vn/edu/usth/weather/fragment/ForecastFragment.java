@@ -1,6 +1,5 @@
-package vn.edu.usth.weather;
+package vn.edu.usth.weather.fragment;
 
-import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,10 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
+
+import vn.edu.usth.weather.R;
 
 public class ForecastFragment extends Fragment {
 

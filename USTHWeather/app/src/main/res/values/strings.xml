@@ -20,4 +20,8 @@
     <string name="Weather_Hanoi">20C \nCloudy</string>
     <string name="Weather_Paris">12C \nCloudy</string>
     <string name="Weather_Tokyo">18C \nCloudy</string>
+    <string name="image_weather">Image weather</string>
+    <string name="refresh">Refresh</string>
+    <string name="more">More</string>
+    <string name="title_activity_pref">PrefActivity</string>
 </resources>

@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="@color/baby_blue_eyes"
-    tools:context=".ForecastFragment"
+    tools:context=".fragment.ForecastFragment"
     tools:ignore="UseCompoundDrawables">
 
     <LinearLayout
