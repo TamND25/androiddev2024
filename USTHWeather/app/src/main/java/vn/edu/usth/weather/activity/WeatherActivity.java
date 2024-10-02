@@ -1,10 +1,13 @@
 package vn.edu.usth.weather.activity;
 
+import android.graphics.Bitmap;
 import android.media.MediaPlayer;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Looper;
 import android.os.Handler;
 import android.os.Message;
+import android.os.AsyncTask;
 import android.util.Log;
 
 import android.content.Intent;
@@ -16,6 +19,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.viewpager.widget.ViewPager;
+
+import android.widget.ExpandableListAdapter;
 import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
@@ -51,6 +56,7 @@ public class WeatherActivity extends AppCompatActivity {
 
         initToolBar();
         requestNetwork();
+        requestAsyncTask();
     }
 
     private void initToolBar() {
@@ -90,13 +96,33 @@ public class WeatherActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 Bundle mBundle = new Bundle();
-                mBundle.putString(RESPONSE_KEY, "Request Network....");
+                mBundle.putString(RESPONSE_KEY, "Request Network thread");
                 Message msg = new Message();
                 msg.setData(mBundle);
                 handler.sendMessage(msg);
             }
         });
         thread.start();
+    }
+
+    private void requestAsyncTask() {
+        AsyncTask<String, Integer, Bitmap> aTask = new AsyncTask<String, Integer, Bitmap>() {
+            @Override
+            protected Bitmap doInBackground(String... strings) {
+                try {
+                    Thread.sleep(4000);
+                    }   catch   (Exception e){
+                        e.printStackTrace();
+                }
+                return null;
+            }
+
+            protected void onPostExecute(Bitmap bitmap)  {
+                Toast.makeText(getApplicationContext(),
+                        "Request Network with Async", Toast.LENGTH_SHORT).show();
+            }
+        };
+        aTask.execute();
     }
 
     @Override
