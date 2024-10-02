@@ -1,6 +1,7 @@
 package vn.edu.usth.weather.activity;
 
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.media.MediaPlayer;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -21,9 +22,15 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.viewpager.widget.ViewPager;
 
 import android.widget.ExpandableListAdapter;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 import vn.edu.usth.weather.adapter.HomeFragmentPagerAdapter;
 import vn.edu.usth.weather.R;
@@ -55,7 +62,7 @@ public class WeatherActivity extends AppCompatActivity {
         mp.start();
 
         initToolBar();
-        requestNetwork();
+        /*requestNetwork();*/
         requestAsyncTask();
     }
 
@@ -79,7 +86,7 @@ public class WeatherActivity extends AppCompatActivity {
         });
     }
 
-    private void requestNetwork() {
+    /*private void requestNetwork() {
         final Handler handler = new Handler(Looper.getMainLooper()) {
             @Override
             public void handleMessage(@NonNull Message msg) {
@@ -103,23 +110,45 @@ public class WeatherActivity extends AppCompatActivity {
             }
         });
         thread.start();
-    }
+    }*/
+
 
     private void requestAsyncTask() {
         AsyncTask<String, Integer, Bitmap> aTask = new AsyncTask<String, Integer, Bitmap>() {
             @Override
             protected Bitmap doInBackground(String... strings) {
                 try {
-                    Thread.sleep(4000);
-                    }   catch   (Exception e){
-                        e.printStackTrace();
+                    Thread.sleep(1000);
+                    URL url = new URL("https://usth.edu.vn/wp-content/uploads/2022/08/logo-165.jpg");
+
+                    HttpURLConnection connection =
+                            (HttpURLConnection) url.openConnection();
+                    connection.setRequestMethod("GET");
+                    connection.setDoInput(true);
+                    connection.connect();
+
+                    int response = connection.getResponseCode();
+                    Log.i("USTHWeather", "The response is: " + response);
+                    InputStream is = connection.getInputStream();
+
+                    Bitmap bitmap = BitmapFactory.decodeStream(is);
+
+                    connection.disconnect();
+
+                    return bitmap;
+
+                }   catch (InterruptedException | IOException e) {
+                    e.printStackTrace();
+                    return null;
                 }
-                return null;
             }
 
             protected void onPostExecute(Bitmap bitmap)  {
                 Toast.makeText(getApplicationContext(),
-                        "Request Network with Async", Toast.LENGTH_SHORT).show();
+                        "ASync USTH Logo downloaded ", Toast.LENGTH_SHORT).show();
+
+                ImageView logo = findViewById(R.id.logo);
+                logo.setImageBitmap(bitmap);
             }
         };
         aTask.execute();
